@@ -1,0 +1,92 @@
+/* browse reset */
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Raleway;
+  display:grid;
+  grid-template-areas:
+  "menu        menu       menu       menu"
+  "selfpic     text    text       text"
+  "picture     picture    picture    picture"
+  "footer      footer     footer     footer";
+  background-image: linear-gradient(white, #ffe6e6);
+  grid-gap: 0.5px;
+  padding: 20px;
+}
+
+/* menu */
+section{
+  margin-bottom: 20px;
+}
+.menu{
+  background:white;
+  font-weight: bold;
+  grid-area: menu;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 30px;
+}
+.menu a{
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+.menu a:hover{
+  color: #999999;
+}
+.menu nav{
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.logo a{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.about a{
+  color: #999999;
+  text-decoration: underline;
+}
+
+/* indhold */
+.selfpic{
+  grid-area: selfpic;
+  display: grid;
+  width: 5%;
+}
+.headline {
+  grid-area: text;
+  display: grid;
+}
+.headline p{
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  width: 100%
+}
+.headline h1{
+  text-align: center;
+  justify-content: center;
+  width: 100%
+}
+
+/* pictures */
+.projectimg{
+  display:flex;
+  justify-content: center;
+}
+.box{
+  grid-area: picture;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  margin: 20px;
+}

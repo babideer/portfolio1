@@ -1,0 +1,138 @@
+/* browse reset */
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Raleway;
+  display:grid;
+  grid-template-areas:
+  "menu     menu    menu        menu"
+  "hey      hey     profilepic  profilepic"
+  "info     info    info        info"
+  "more     more    more        more "
+  "footer   footer  footer      footer";
+  background-image: linear-gradient(white, #ffe6e6);
+
+  grid-gap:30px;
+  padding: 0px;
+}
+
+/* menu */
+
+section{
+  margin-bottom: 30px;
+}
+.menu{
+  background:white;
+  font-weight: bold;
+  grid-area: menu;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 30px;
+}
+.menu a{
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+.menu a:hover{
+  color: #999999;
+}
+.menu nav{
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.logo a{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.about a{
+  color: #999999;
+  text-decoration: underline;
+}
+
+/* indhold */
+
+.headline{
+  grid-area: hey;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.frontpic{
+  grid-area: profilepic;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}
+
+/* about */
+.aboutme{
+  grid-area: info;
+  padding: 40px;
+}
+/* icons */
+.icons{
+  grid-area: more;
+  display:flex;
+  position: relative;
+  justify-content: center;
+  margin: 60px;
+}
+.motion{
+  grid-area: more1;
+  text-align: center;
+  justify-content: space-between;
+  padding: 25px;
+  padding-left: 30px;
+  color:#4d0000;
+}
+.photo{
+   grid-area: more2;
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px;
+    padding-left: 30px;
+    color:#4d0000;
+}
+.travel{
+  grid-area: more3;
+  text-align: center;
+  justify-content: space-between;
+  padding: 25px;
+  padding-left: 30px;
+  color: #4d0000;
+}
+
+.madeira a{
+  text-decoration: none;
+  color: #ff5050;
+}
+.madeira a:hover{
+  color: #ff99ff;
+}
+
+/* footer */
+.footername{
+  grid-area: footer;
+  padding: 50px;
+  text-align: left;
+  background:#ffccff;
+  color: #595959;
+}
+
+.contact{
+  grid-area: footer;
+  padding: 50px;
+  text-align: center;
+  color: #595959;
+}

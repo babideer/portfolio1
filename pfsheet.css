@@ -1,0 +1,123 @@
+/* browse reset */
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Raleway;
+  display:grid;
+  grid-template-areas:
+  "menu     menu    menu        menu"
+  "hey      hey     hey  hey"
+  "info     info    info        info"
+  "moreone     moretwo    morethree        more "
+  "footer   footer  footer      footer";
+  background-image: linear-gradient(white, #ffe6e6);
+
+  grid-gap:30px;
+  padding: 0px;
+}
+
+/* menu */
+
+section{
+  margin-bottom: 30px;
+}
+.menu{
+  background:white;
+  font-weight: bold;
+  grid-area: menu;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 30px;
+}
+.menu a{
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+.menu a:hover{
+  color: #999999;
+}
+.menu nav{
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.logo a{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.port a{
+  text-decoration: underline;
+  color: #999999;
+}
+/* indhold */
+.headline{
+  grid-area: hey;
+  text-align:center;
+  justify-content: center;
+}
+.h1{
+  font-size:50px;
+}
+.p{
+  font-size: 20px;
+}
+
+/* pictures */
+
+.images{
+  display:flex;
+  justify-content: center;
+}
+.box{
+  grid-column: more;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  margin: 50px;
+}
+
+.infotext{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  left:0;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  visibility: hidden;
+  opacity:0;
+  transition: 0.6s;
+}
+
+.box:hover .infotext{
+  visibility: visible;
+  opacity: 2;
+}
+/* footer */
+.footername{
+  color: #595959;
+  grid-area: footer;
+  padding: 50px;
+  text-align: left;
+  background:#ffccff;
+}
+
+.contact{
+  grid-area: footer;
+  padding: 50px;
+  text-align: center;
+  color: #595959;
+}
